@@ -1,0 +1,192 @@
+/* General */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+.navbar-logo {
+  height: 180px;
+  width: auto;
+  max-width: 500px;
+  margin-right: 2.5rem;
+  display: block;
+}
+.home-logo {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  font-size: 1.2rem;
+}
+.services-list li {
+  margin-bottom: 1rem;
+}
+.contact-form label {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contact-form button {
+  margin-top: 1rem;
+}
+.whatsapp-link {
+  color: #128C7E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+
+  font-size: 0.95rem;
+}
+.min-height-60vh {
+  min-height: 60vh;
+}
+@media (max-width: 640px) {
+  .navbar-logo {
+    height: 36px;
+  }
+  .home-logo {
+    max-width: 90px;
+  }
+}
+
+#main-content:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+#carousel-container {
+  margin: 2rem auto;
+}
+.orbit img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Remove background, shadow, and border from navbar */
+.top-bar {
+  box-shadow: none;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: unset;
+}
+
+/* Remove padding and margin from left section and logo container */
+.top-bar-left {
+  padding: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.top-bar-right {
+  padding: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu-text {
+  padding: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.whatsapp-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.whatsapp-qr-link img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+}
+
+/* Make the menu items bigger */
+.top-bar .menu a,
+.top-bar .dropdown.menu a {
+  font-size: 1.5rem;
+  padding: 1.2rem 1.5rem;
+}
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Make the navbar thinner without changing the logo height */
+.top-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+  height: auto;
+}
+
+.top-bar-left,
+.top-bar-right,
+.menu,
+.menu-text {
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar .menu a,
+.top-bar .dropdown.menu a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.2;
+  height: auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}

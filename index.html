@@ -1,70 +1,55 @@
 <!--
   This website has been deployed at:
-  https://itamarjp.github.io/study-com-cs104/
+  https://itamarjp.github.io/study-com-cs104-2
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dr. Emily Carter</title>
+  <title>Dr. Emily Carter - Dentist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-  <!-- Foundation CSS CDN -->
+  <!-- Foundation CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="grid-container fluid">
-    <div class="grid-x align-middle min-height-100">
-      <div class="cell medium-6 small-12 text-center">
-        <!-- Logo created in Canva -->
-        <img src="images/logo.png" alt="Logo of Dr. Emily Carter" class="logo">
-        <div class="info">
-          
-          <div class="services-wrapper">
-            <ul class="services no-bullet text-left small-text-center">
-              <li>Teeth Whitening</li>
-              <li>Dental Implants</li>
-              <li>Cosmetic Dentistry</li>
-              <li>Routine Checkups</li>
-              <li>Emergency Dental Care</li>
-            </ul>
+  <div class="site-wrapper">
+    <header>
+      <nav class="top-bar" role="navigation">
+        <div class="top-bar-left">
+          <ul class="menu align-middle ">
+            <li class="menu-text">
+              <img src="images/logo_navbar_transparent.png" alt="Dr. Emily Carter Logo" class="navbar-logo">
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="#" data-page="home.html" class="nav-link active">Home</a></li>
+            <li><a href="#" data-page="services.html" class="nav-link">Services</a></li>
+            <li><a href="#" data-page="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Dynamic main content -->
+      <div id="main-content" class="grid-container">
+        <div class="grid-x align-center">
+          <div class="cell medium-8 small-12">
           </div>
-          <div class="spacer"></div>
-          <p class="address">123 Sunnyvale Lane</p>
-          <p class="address">Fictional City, CA</p>
-          <p class="address">90210</p>
-          <div class="spacer"></div>
-          <p>
-            <a href="https://wa.me/19412843838" target="_blank" class="whatsapp-link">
-              WhatsApp: +1 941-284-3838
-            </a>
-          </p>
-          <div class="spacer"></div>
-          <p>
-            <a href="https://wa.me/19412843838" target="_blank">
-              <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://wa.me/19412843838" alt="WhatsApp QR Code">
-            </a>
-          </p>
         </div>
       </div>
-      <div class="cell medium-6 small-12 img-cell">
-        <img 
-          src="images/woman-smile.jpg" 
-          alt="Smiling woman with white teeth" 
-          class="background-img"
-        >
-      </div>
-    </div>
+    </main>
+    <footer class="footer text-center">
+      <p>&copy; 2025 Dr. Emily Carter, Dentist. All rights reserved.</p>
+    </footer>
   </div>
-  <!--
-  <footer class="text-center">
-    <p>
-        Background image by Kamal Hoseinianzade &amp; Dr Farid Sharifi via 
-        <a href="https://unsplash.com/photos/a-close-up-of-a-womans-mouth-with-white-teeth-RCQnbyQsnUg" target="_blank" rel="noopener">Unsplash</a>. 
-        Logo created using <a href="https://www.canva.com" target="_blank" rel="noopener">Canva</a>.
-    </p>
-  </footer>
-  -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
