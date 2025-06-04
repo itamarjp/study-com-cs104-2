@@ -8,48 +8,49 @@
   <meta charset="UTF-8">
   <title>Dr. Emily Carter - Dentist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Foundation CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="w3-light-grey">
   <div class="site-wrapper">
-    <header>
-      <nav class="top-bar" role="navigation">
-        <div class="top-bar-left">
-          <ul class="menu align-middle ">
-            <li class="menu-text">
-              <img src="images/logo_navbar_transparent.png" alt="Dr. Emily Carter Logo" class="navbar-logo">
-            </li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li><a href="#" data-page="home.html" class="nav-link active">Home</a></li>
-            <li><a href="#" data-page="services.html" class="nav-link">Services</a></li>
-            <li><a href="#" data-page="contact.html" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Dynamic main content -->
-      <div id="main-content" class="grid-container">
-        <div class="grid-x align-center">
-          <div class="cell medium-8 small-12">
-          </div>
-        </div>
+    <!-- Navbar fixa no topo -->
+    <div class="w3-bar w3-white w3-large w3-padding-16 w3-card w3-top" id="navbar">
+      <a href="#" class="w3-bar-item w3-left navbar-logo-text" style="display: flex; align-items: center; gap: 12px;">
+        <i class="fa-solid fa-tooth fa-2x w3-text-teal"></i>
+        <span style="font-weight: bold; font-size: 1.3em;">Dr. Emily Carter</span>
+      </a>
+      <!-- Ícone hamburguer para mobile -->
+      <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" id="nav-toggle">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div id="navLinks" class="w3-right w3-hide-small">
+        <a href="#" class="w3-bar-item w3-button nav-link w3-text-teal" data-page="home.html">Home</a>
+        <a href="#" class="w3-bar-item w3-button nav-link w3-text-teal" data-page="services.html">Services</a>
+        <a href="#" class="w3-bar-item w3-button nav-link w3-text-teal" data-page="contact.html">Contact</a>
       </div>
+    </div>
+    <!-- Menu responsivo para mobile, aparece logo após a navbar -->
+    <div id="navLinksSmall" class="w3-bar-block w3-white w3-hide w3-hide-medium w3-hide-large">
+      <a href="#" class="w3-bar-item w3-button nav-link w3-text-teal" data-page="home.html">Home</a>
+      <a href="#" class="w3-bar-item w3-button nav-link w3-text-teal" data-page="services.html">Services</a>
+      <a href="#" class="w3-bar-item w3-button nav-link w3-text-teal" data-page="contact.html">Contact</a>
+    </div>
+    <!-- Conteúdo principal -->
+    <main class="w3-container w3-padding-32" style="flex:1 0 auto;">
+      <div id="main-content"></div>
     </main>
-    <footer class="footer text-center">
+    <!-- Rodapé -->
+    <footer class="w3-center w3-padding-16 w3-light-grey footer">
+      <p>
+        <strong>Office Address:</strong><br>
+        123 Sunnyvale Lane<br>
+        Fictional City, CA, 90210<br>
+        <strong>Phone:</strong> +1 941-284-3838
+      </p>
       <p>&copy; 2025 Dr. Emily Carter, Dentist. All rights reserved.</p>
     </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"></script>
   <script src="main.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
 </body>
 </html>
