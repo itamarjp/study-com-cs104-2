@@ -104,3 +104,16 @@ main {
   box-shadow: none;
   border: none;
 }
+
+/* Services */
+.services-list {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.25rem; /* similar to w3-large */
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.services-list li {
+  margin-bottom: 1rem;
+}
